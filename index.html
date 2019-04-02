@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Умный дом">
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-slider.min.css"> 
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">   
+    <link rel="stylesheet" type="text/css" href="/css/jquery.mobile-1.4.5.min.css" />
+
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.mobile-1.4.5.min.js"></script> 
+    <script type="text/javascript" src="/js/bootstrap-slider.min.js"></script> 
+    <script type="text/javascript" src="/js/buttons_func.js"></script>
+
+    <title>Умный дом</title>
+</head>
+<body class="m-2">
+    <div class="container">
+        <div class="mini-menu">
+            <h3>Меню</h3>
+            <ul id="main-ul">         
+                <li class="sub">
+                    <a href="#">Люстра</a>
+                    <ul>
+                        <li><button class="btn btn-outline-secondary" name="button" id="relay_toggle_left">Левый выключатель</button></li>
+                        <li><button class="btn btn-outline-secondary" name="button" id="relay_toggle_right">Правый выключатель</button></li>                   
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">Светодиодная лента<br/>(Ручное управление)</a>
+                    <ul>
+                        <div class="rgb-sliders">
+                            <p>
+                                <b class="slider-title">R</b>
+                                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="0" data-slider-id="RC" id="red" data-slider-tooltip="hide" data-slider-handle="round" />
+                            </p>
+                            <p>
+                                <b class="slider-title">G</b>
+                                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="0" data-slider-id="GC" id="green" data-slider-tooltip="hide" data-slider-handle="round" />
+                            </p>
+                            <p>
+                                <b class="slider-title">B</b>
+                                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="0" data-slider-id="BC" id="blue" data-slider-tooltip="hide" data-slider-handle="round" />
+                            </p>
+                        </div>
+                        <div id="RGB"></div>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">Светодиодная лента<br/>(Автоматическое управление)</a>
+                    <ul>
+                        <li><button class="btn btn-outline-secondary" name="button" id="change_colors_start">Начать</button></li>
+                        <li><button class="btn btn-outline-secondary" name="button" id="change_colors_stop">Остановить</button></li>                             
+                    </ul>
+                </li>   
+                        
+            </ul>
+        </div>
+        <div class="room-plan">
+            <img src="/img/room.png" alt="room image" title="room image" class="images">
+            <img src="/img/background_for_led_strip.png" alt="room image" title="room image" class="images" id="led-strip">
+            <img src="/img/left_switcher.png" alt="room image" title="room image" class="images" id="left-switcher">
+            <img src="/img/right_switcher.png" alt="room image" title="room image" class="images" id="right-switcher">           
+        </div>
+</div>
+
+    <script type="text/javascript" src="/js/menu_animation.js"></script>
+    <script type="text/javascript" src="/js/sliders_func.js"></script>
+</body>
+</html>

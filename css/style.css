@@ -1,0 +1,113 @@
+.container {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 3fr;
+  float: left; 
+}
+/* Меню */
+.mini-menu {
+  padding: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow:0 0 8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.4);
+  box-shadow:0 0 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  font: normal 14px "Roboto", Arial, sans-serif;
+}
+.mini-menu h3 {
+  font-size: 20px;
+  color: rgba(0,0,0,.6);
+  margin: 0 0 10px;
+  padding: 0 5px;
+  position: relative;  
+  text-align: center;
+  cursor: default;
+}
+.mini-menu ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.mini-menu #main-ul {
+  border-top: 1px solid rgba(0,0,0,.3);
+}
+.mini-menu > ul > li {
+  margin: 12px 0 0 0px;
+  position: relative;
+}
+.mini-menu > ul > li > a {
+  display: block;	
+  padding: 5px;	
+  background: white;
+  color: rgba(0,0,0,.6);
+  text-decoration: none;	
+  font-weight: normal;
+  font-size: 15px;
+}
+.mini-menu > ul > li > a:hover {
+  background: #757575;
+  color: white;
+}
+.mini-menu .sub ul {
+  display: none;
+  overflow: hidden;
+}
+/* Слайдеры */
+#RGB {
+	height: 20px;
+  background:black;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin: 5px 0px 5px 0px;
+}
+#RC .slider-selection {
+	background: #FF8282;
+}
+#RC .slider-handle {
+	background: red;
+}
+#GC .slider-selection {
+	background: #428041;
+}
+#GC .slider-handle {
+	background: green;
+}
+#BC .slider-selection {
+	background: #8283FF;
+}
+#BC .slider-handle {
+	border-bottom-color: blue;
+}
+.slider.slider-horizontal {
+  width: 190px !important;
+}
+.rgb-sliders {
+  margin: 5px 0px 5px 0px;
+}
+.slider-title {
+  padding-right: 14px;
+}
+/* Кнопки в подменю */
+.btn {
+  margin: 5px 2% 5px 2%;
+  width: 96%;
+}
+/* Изображение комнаты */
+.room-plan {
+  position: relative;
+}
+.images { 
+  position: absolute; 
+  width: 100%;
+  object-fit: cover;
+} 
+#left-switcher {
+  visibility: hidden
+}
+#right-switcher {
+  visibility: hidden
+}
+#led-strip {
+  border: 6px solid black;
+}
